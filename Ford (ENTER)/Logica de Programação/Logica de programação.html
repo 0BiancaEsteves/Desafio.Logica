@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio: Lógica de Programação</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1589981941324-27c29919de98?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            font-family: Arial, Helvetica, sans-serif;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 700px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgb(65, 62, 62);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gastos de combustível:</h1>
+    </header>
+
+    <section id="resultado"></section>
+
+    <script>
+        function pedirNumero(mensagem) {
+            let valor;
+            do {
+                let entrada = prompt(mensagem);
+                entrada = entrada.replace(',', '.');
+                valor = parseFloat(entrada);
+                if (isNaN(valor) || valor <= 0) {
+                    alert("Por favor, digite um número válido e maior que zero.");
+                }
+            } while (isNaN(valor) || valor <= 0);
+            return valor;
+        }
+
+        const maxPostos = 20;
+
+        let distanciaPercorrida = pedirNumero("Qual a distância percorrida da sua casa até seu trabalho (em KM)?");
+        let consumoMedio = pedirNumero("Qual o consumo médio do seu veículo (em KM/L)?");
+
+        let consumoNecessario = distanciaPercorrida / consumoMedio;
+
+        // NOVO TRECHO CORRIGIDO
+        let entradaPostos;
+        let postos;
+        do {
+            entradaPostos = prompt(`Quantos postos você pesquisou? (máximo de ${maxPostos})`);
+            entradaPostos = entradaPostos.replace(',', '.');
+            postos = Number(entradaPostos);
+
+            if (!Number.isInteger(postos) || postos <= 0 || postos > maxPostos) {
+                alert(`Digite um número inteiro válido entre 1 e ${maxPostos}.`);
+            }
+        } while (!Number.isInteger(postos) || postos <= 0 || postos > maxPostos);
+
+        let menorPreco = null;
+        let somaPreco = 0;
+
+        for (let i = 1; i <= postos; i++) {
+            let preco = pedirNumero(`Qual o preço do posto ${i} pesquisado?`);
+            somaPreco += preco;
+            if (menorPreco === null || preco < menorPreco) {
+                menorPreco = preco;
+            }
+            alert(`Preço do posto ${i}: R$${preco.toFixed(2)}`);
+        }
+
+        let media = somaPreco / postos;
+        let gastoDiario = 2 * (consumoNecessario * menorPreco); // ida e volta
+
+        let resultadoHTML = `
+            <h2>Resultados:</h2>
+            <p><strong>Consumo necessário (ida):</strong> ${consumoNecessario.toFixed(2)} litros</p>
+            <p><strong>Menor valor pesquisado:</strong> R$${menorPreco.toFixed(2)}</p>
+            <p><strong>Média dos valores:</strong> R$${media.toFixed(2)}</p>
+            <p><strong>Gasto diário (ida e volta):</strong> R$${gastoDiario.toFixed(2)}</p>
+        `;
+
+        document.getElementById("resultado").innerHTML = resultadoHTML;
+    </script>
+</body>
+</html>
+
+
