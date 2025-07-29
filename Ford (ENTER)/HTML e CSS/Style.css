@@ -5,3 +5,20 @@
 .Centralizando_imagem{
     text-align: center;
 }
+
+.Centralizando-horizontal{
+    list-style: none; /*remove as 'bolinhas' de listas*/
+    text-align: center; /*centraliza o conteúdo*/
+    padding: 0;
+    margin: 20px 0;
+
+}
+.Centralizando-horizontal li{
+    display: inline-block; /*Coloca os intes lado a lado (horizontalmente)*/
+    margin: 0 15px; /*Espaço entre eles*/
+}
+
+.Centralizando-horizontal a{
+    text-decoration: none; /*remove o sublinhado*/
+    color: blue;
+}
