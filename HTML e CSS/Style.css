@@ -28,31 +28,45 @@
     }
 
 .CSS_footer {
-    background-color: #1c2a5f;
-    padding: 10px 20px;
-    color: white;
+  background-color: #1c2a5f; /* cor ford*/
+  padding: 15px 20px;
+  color: white;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between; /* distribui as 3 partes: esquerda, centro, direita */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto; /* centraliza o conteúdo do rodapé */
-    flex-wrap: wrap; /* para dispositivos pequenos */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.footer-esquerda a img,
-.footer-direita img {
-    width: 40px;
-    margin: 0 5px;
+.footer-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo-redes {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.footer-esquerda a img {
+  width: 30px;
 }
 
 .footer-centro {
-    text-align: center;
-    flex: 1;
+  text-align: center;
+  flex: 1;
 }
 
 .footer-centro p {
-    margin: 5px 0;
+  margin: 0;
+}
+
+.footer-direita img {
+  width: 100px; 
 }
