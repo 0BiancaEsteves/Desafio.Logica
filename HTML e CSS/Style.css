@@ -16,11 +16,17 @@
 .Centralizando-horizontal li{
     display: inline-block; /*Coloca os intes lado a lado (horizontalmente)*/
     margin: 0 15px; /*Espaço entre eles*/
+    font-size: 20px; /*tamanho da fonte home (home, lançamento é contato)*/
+     transition: color 0.3s ease; /*time (tempo) da troca de cores (transition)*/
 }
 
 .Centralizando-horizontal a{
     text-decoration: none; /*remove o sublinhado*/
     color: blue;
+}
+
+.Centralizando-horizontal :hover{ /*'hover' é o comando da troca de cores*/
+    color: #1c2a5f; /*cor selecionada para mudar quando encostar no curso dos nomes*/
 }
 
     .Centralizando_copy{
