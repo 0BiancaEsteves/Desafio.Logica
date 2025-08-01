@@ -1,3 +1,5 @@
+/*CSS geral (Header é footer são padrão das 3 páginas) */
+
 .Centralizando_conteudo{
    text-align: center;
 }
@@ -76,3 +78,6 @@
 .footer-direita img {
   width: 100px; /*logo Ford para direita (100px = 100 pixels?)*/
 }
+
+
+/*CSS do Lançamento*/
