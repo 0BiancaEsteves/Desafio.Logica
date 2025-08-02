@@ -18,7 +18,7 @@
 .Centralizando-horizontal li{
     display: inline-block; /*Coloca os intes lado a lado (horizontalmente)*/
     margin: 0 15px; /*Espaço entre eles*/
-    font-size: 20px; /*tamanho da fonte home (home, lançamento é contato)*/
+    font-size: 25px; /*tamanho da fonte home (home, lançamento é contato)*/
      transition: color 0.3s ease; /*time da troca de cores (transition)*/
 }
 
@@ -81,3 +81,23 @@
 
 
 /*CSS do Lançamento*/
+
+.CSS_video{
+  display: flex;
+  justify-content: center; /* centraliza na horizontal */
+  align-items: center;    /*centraliza na vertical */
+ 
+}
+
+.CSS_video{
+  width: 100%; /*width define largura*/
+  max-width: 100%; /*max-width define altura total que ele pode chegar (max)*/
+  display: flex; /*display: flex ativa o flexbox*/
+  justify-content: center; /*justify-content alinha os elementos horizontalmente*/
+}
+
+.CSS_video iframe {
+  width: 90%; 
+  height: auto;/*height: auto. Define altura do elemento */
+  aspect-ratio: 16/9; /*aspect-ratio Diz ao navegador qual é a proporção entre largura e altura*/
+}
