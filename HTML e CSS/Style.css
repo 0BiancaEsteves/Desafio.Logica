@@ -101,3 +101,54 @@
   height: auto;/*height: auto. Define altura do elemento */
   aspect-ratio: 16/9; /*aspect-ratio Diz ao navegador qual é a proporção entre largura e altura*/
 }
+
+/* Estilo da tabela */
+.tabelaCarros {
+    width: 100%;
+    text-align: center; /*Centralizando*/
+}
+
+/* Cada célula (carro) */
+.veiculo-card {
+    padding: 15px;
+}
+
+.comparar-container {
+    display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+    justify-content: center;
+    gap: 5x; /* espaço entre a caixa e o ícone */
+    margin: 10px 0;
+}
+
+/* Aumentar checkbox */
+.veiculo-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Ícone de info */
+.info-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    
+}
+
+/* Estilo do botão */
+button {
+    background-color: #004481; /* azul Ford */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #003366; /* azul mais escuro */
+}
