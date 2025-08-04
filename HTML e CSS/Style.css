@@ -139,7 +139,7 @@
 
 /* Estilo do botão */
 button {
-    background-color: #004481; /* azul Ford */
+    background-color: blue; /*Cor do botão*/
     color: white;
     border: none;
     padding: 10px 20px;
