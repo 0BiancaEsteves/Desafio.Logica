@@ -160,3 +160,9 @@ button:hover {
 .veiculo-card p{
 color: #000;
 }
+
+/*HTML da aba CONTATO*/
+
+.contato-carro{
+  text-align: center;
+}
