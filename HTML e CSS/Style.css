@@ -152,3 +152,11 @@ button {
 button:hover {
     background-color: #003366; /* azul mais escuro */
 }
+
+.veiculo-card{
+  color: blue;
+}
+
+.veiculo-card p{
+color: #000;
+}
