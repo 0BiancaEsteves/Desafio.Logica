@@ -1,0 +1,75 @@
+/*CSS geral (Header é footer são padrão das 3 páginas) */
+
+/*Parte de cima, cabecalho (header)*/
+.Centralizando-horizontal{
+    list-style: none; /*remove as 'bolinhas' de listas*/
+    text-align: center; /*centraliza o conteúdo*/
+    padding: 0;
+    margin: 20px 0;
+
+}
+.Centralizando-horizontal li{
+    display: inline-block; /*Coloca os intes lado a lado (horizontalmente)*/
+    margin: 0 15px; /*Espaço entre eles*/
+    font-size: 25px; /*tamanho da fonte home (home, lançamento é contato)*/
+     transition: color 0.3s ease; /*time da troca de cores (transition)*/
+}
+
+.Centralizando-horizontal a{
+    text-decoration: none; /*remove o sublinhado*/
+    color: blue;
+}
+
+.Centralizando-horizontal :hover{ /*'hover' é o comando da troca de cores*/
+    color: #1c2a5f; /*cor selecionada para mudar quando encostar no cursor do mouse dos nomes*/
+}
+
+    .Centralizando_copy{
+        text-align: center;
+    }
+
+
+/*Parte de baixo, conhecido como rodapé ou footer*/
+    .CSS_footer {
+  background-color: #1c2a5f;
+  padding: 15px 20px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo-redes {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.footer-esquerda a img {
+  width: 30px;
+}
+
+.footer-centro {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-centro p {
+  margin: 0;
+}
+
+.footer-direita img {
+  width: 100px; /*logo Ford para direita (100px = 100 pixels)*/
+}
