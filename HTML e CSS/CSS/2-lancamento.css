@@ -28,10 +28,19 @@
     padding: 15px;
 }
 
-.veiculo-checkbox {
-    width: 20px;
-    height: 20px;
+.veiculo-checkbox{ 
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.veiculo-checkbox input[type="checkbox"]{    
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    display: flex;
+    margin: 17px 0 10px 0;    
 }
 
 .veiculo-card{
@@ -64,7 +73,7 @@ button {
     background-color: blue; /*Cor do botão*/
     color: white;
     border: none;
-    padding: 25px 50px;
+    padding: 25px 70px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 25px;
