@@ -13,7 +13,8 @@
 }
 
 .CSS_video iframe {
-  width: 90%; 
+  width: 100%; 
+  padding: 70px;
   height: auto;/*height: auto. Define altura do elemento */
   aspect-ratio: 16/9; /*aspect-ratio Diz ao navegador qual é a proporção entre largura e altura*/
 }
