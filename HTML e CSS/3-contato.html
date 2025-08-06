@@ -21,36 +21,41 @@
     </header>
     
     <main>
-        <div class="contato-carro">
-            <img src="img/xls 2.2 diesel.jpg" alt="imagem do carro"> 
+       <div class="container-flex">
+    <!-- Imagem do carro -->
+    <div class="contato-carro">
+      <img src="img/xls 2.2 diesel.jpg" alt="imagem do carro"> 
+    </div>
+
+    <!-- Formulário -->
+    <section>
+      <form class="CSS-formulario">
+        <h3>Sobre Você</h3>
+
+        <div class="Grupo-formulario">
+            <input type="text" placeholder="Nome*"> 
         </div>
-        <section>
-          <form class="CSS-formulario"> <!--form cria um "formulário"-->
-            <h3>Sobre Você</h3>
-          
-          <div class="Grupo-formulario" placeholder="Nome completo">
-              <input type="text">
-          </div>
-          <div class="Grupo-formulario" placeholder="E-mail">
-            <input type="text">
-          </div>
-          <div class="Grupo-formulario" placeholder="Telefone">
-            <input type="text">
-          </div>
-          <div class="Grupo-formulario">
-            <select>
-               <option value="" disabled selected hidden> Tipo de contato</option> <!--Option cria uma lista suspensa-->
-                        <option value="elogio">Elogio</option>
-                        <option value="reclamacao">Reclamação</option>
-                        <option value="solicitacao">Solicitação</option>
-            </select>
-          </div>
-          <div class="Grupo-formulario">
-            <textarea placeholder="Sua mensagem" rows="2"></textarea> <!--Cria uma área de texto grande-->
-          </div>
-            <button type="submit" class="submit-botao">Comparar Carros</button>
-          </form>
-        </section>
+        <div class="Grupo-formulario">
+          <input type="text" placeholder="E-mail*">
+        </div>
+        <div class="Grupo-formulario">
+          <input type="text" placeholder="Telefone*">
+        </div>
+        <div class="Grupo-formulario">
+          <select>
+              <option value="" disabled selected hidden> Tipo de contato</option>
+              <option value="elogio">Elogio</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="solicitacao">Solicitação</option>
+          </select>
+        </div>
+        <div class="Grupo-formulario">
+          <textarea placeholder="Sua mensagem" rows="2"></textarea>
+        </div>
+          <button type="submit" class="submit-botao">Comparar Carros</button>
+      </form>
+    </section>
+  </div>
     </main>
     
     <footer class="CSS_footer">

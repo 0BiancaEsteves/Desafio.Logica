@@ -64,10 +64,11 @@ button {
     background-color: blue; /*Cor do botão*/
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 25px 50px;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 25px;
+    margin-bottom: 40px;
 }
 
 /* Efeito ao passar o mouse */

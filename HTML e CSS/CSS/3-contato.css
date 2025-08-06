@@ -1,12 +1,64 @@
-.contato-carro{
-    display: flex;
-    max-width: 900px;
-    margin: 30px auto; /*margem = 30 pixels na horrizontal, automática na vertical*/
-    /*gap: 60px;*/
-    /*align-items: center;*/
-     padding: 0 20px;
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px;
+  flex-wrap: wrap; /* Pra não quebrar feio em telas pequenas */
 }
 
-.CSS-formulario{}
+.CSS-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 430px; /*Width = largura*/
 
-.Grupo-formulario{}
+}
+
+
+.contato-carro img {
+  max-width: 400px;
+  height: auto;
+}
+
+.Grupo-formulario input,
+.Grupo-formulario select,
+.Grupo-formulario textarea{
+    width: 100%;
+    padding: 13px 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.Grupo-formulario input:focus
+.Grupo-formulario select:focus
+.Grupo-formulario textarea:focus{
+    border-color: #00274C;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgb(0, 39, 76, 0.1);
+}
+
+button{
+    background-color: #000fff;
+    color: #fff;
+    border: none; /*retira borda do botão*/
+    padding: 15px; /*Aumenta o tamanho do botão*/
+    border-radius: 15px; /*arredonda o botão*/
+    font-size: 1rem;
+    cursor: pointer; /*clicavel*/
+    transition: all 3.0 ease;
+}
+
+button:hover{
+    background-color: #00274C;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.asterisco{
+    color: red;
+}
