@@ -1,0 +1,12 @@
+.contato-carro{
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto; /*margem = 30 pixels na horrizontal, automática na vertical*/
+    /*gap: 60px;*/
+    /*align-items: center;*/
+     padding: 0 20px;
+}
+
+.CSS-formulario{}
+
+.Grupo-formulario{}

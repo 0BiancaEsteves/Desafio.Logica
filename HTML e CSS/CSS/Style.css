@@ -1,6 +1,5 @@
-/*CSS geral (Header é footer são padrão das 3 páginas) */
-
 /*Parte de cima, cabecalho (header)*/
+
 .Centralizando-horizontal{
     list-style: none; /*remove as 'bolinhas' de listas*/
     text-align: center; /*centraliza o conteúdo*/
@@ -30,7 +29,8 @@
 
 
 /*Parte de baixo, conhecido como rodapé ou footer*/
-    .CSS_footer {
+    
+.CSS_footer {
   background-color: #1c2a5f;
   padding: 15px 20px;
   color: white;
