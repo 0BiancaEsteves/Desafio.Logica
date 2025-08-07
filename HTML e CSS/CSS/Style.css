@@ -3,11 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 header{
-   border-bottom: 1px solid #ddd;
-  padding: 0 40px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
   margin-top: 0;
   position: relative;
   top: 0;
+}
+
+header img{
+  height: 70px;
 }
 
 html, body {
@@ -27,7 +31,7 @@ main {
     list-style: none; /*remove as 'bolinhas' de listas*/
     text-align: center; /*centraliza o conteúdo*/
     padding: 0;
-    margin: 20px 0;
+    margin: 20px 0px;
 
 }
 .Centralizando-horizontal li{

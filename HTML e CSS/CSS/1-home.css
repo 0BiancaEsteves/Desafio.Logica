@@ -1,6 +1,5 @@
 .Centralizando_imagem {
     text-align: center;
-    /*max-width: 1000px;*/
     margin: 40px auto;
 }
 
@@ -11,11 +10,6 @@
     height: auto; /*Mantem a propoção original da imagem*/
 }
 
-/*@media (min-width: 500px){
-.Centralizando_imagem img{
-    max-width: 100%
-}
-}*/
 
 
 .Centralizando_conteudo{
