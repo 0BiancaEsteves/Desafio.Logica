@@ -1,6 +1,22 @@
-.Centralizando_imagem{
+.Centralizando_imagem {
     text-align: center;
+    /*max-width: 1000px;*/
+    margin: 40px auto;
 }
+
+.Centralizando_imagem img{
+    display: block; /*Centraliza imagem*/
+    margin: 0 auto; /*Centraliza horrizontalmente*/    
+    max-width: 100%; /*faz com que a imagem nunca ultrapasse do bloco (responsivo)*/    
+    height: auto; /*Mantem a propoção original da imagem*/
+}
+
+/*@media (min-width: 500px){
+.Centralizando_imagem img{
+    max-width: 100%
+}
+}*/
+
 
 .Centralizando_conteudo{
    text-align: center;
