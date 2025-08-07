@@ -14,9 +14,17 @@
 
 .CSS_video iframe {
   width: 100%; 
-  padding: 70px;
+  padding: 40px;
   height: auto;/*height: auto. Define altura do elemento */
   aspect-ratio: 16/9; /*aspect-ratio Diz ao navegador qual é a proporção entre largura e altura*/
+}
+
+.CSS-texto{
+  text-align: center;
+  flex: 0 0 300px;
+  padding-right: 40px;
+  margin: 5px 100px 10px 100px;
+  line-height: 1.5;
 }
 
 /* Estilo da tabela */
